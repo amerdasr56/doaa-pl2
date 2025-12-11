@@ -7,7 +7,7 @@ public class Room implements Payable {
     private String type;
     private double price;
     private String status;
-    private ArrayList<String> amenities;
+    private ArrayList<String> amenities;  // e.g., "WiFi,TV,MiniBar" = additional services
     private int floor;
     private String view;
 
@@ -16,7 +16,7 @@ public class Room implements Payable {
         this.type = type;
         this.price = price;
         this.status = status;
-        this.amenities = new ArrayList<>(Arrays.asList(amenities.split(",")));
+        this.amenities = new ArrayList<>(Arrays.asList(amenities.split(",")));  // Split amenities by comma
         this.floor = floor;
         this.view = view;
     }

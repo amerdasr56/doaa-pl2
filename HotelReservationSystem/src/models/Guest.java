@@ -3,13 +3,13 @@ package models;
 import java.time.*;
 import java.util.ArrayList;
 
-public class Gest extends Person {
+public class Guest extends Person {
     private Room room;
     private LocalDate checkIn;
     private LocalDate checkOut;
     private ArrayList<Service> services = new ArrayList<>();
 
-    public Gest(String fullName, String phone, String email, String nationalId, String address) {
+    public Guest(String fullName, String phone, String email, String nationalId, String address) {
         super(fullName, phone, email, nationalId, address);
     }
 

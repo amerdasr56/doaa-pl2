@@ -4,10 +4,10 @@ public class Employee extends Person {
     private String employeeId;
     private String position;
 
-    public Employee(String fullName, String phone, String email, String nationalId, String address, String emloyeeId,
+    public Employee(String fullName, String phone, String email, String nationalId, String address, String employeeId,
             String position) {
         super(fullName, phone, email, nationalId, address);
-        this.employeeId = emloyeeId;
+        this.employeeId = employeeId;
         this.position = position;
     }
 
@@ -48,7 +48,7 @@ public class Employee extends Person {
 
     @Override
     public String getPaymentDetails() {
-        return "Employee: " + getName() + " " + "position: " + getPosition() + " " + "salary: " + pay();
+        return "Employee: " + getName() + " " + "id: " + getEmployeeId() + " " + "position: " + getPosition() + " " + "salary: " + pay();
     }
 
     @Override
